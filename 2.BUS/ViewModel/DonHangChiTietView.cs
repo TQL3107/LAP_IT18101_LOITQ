@@ -14,6 +14,6 @@ namespace _2.BUS.ViewModel
         public DonhangChitiet donhangChitiet { get; set; }  
         public Khachhang khachhang { get; set; }
         public Donhang donhang { get; set; }
-
+        public Sanpham sanpham { get; set; }
     }
 }

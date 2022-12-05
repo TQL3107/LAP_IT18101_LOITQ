@@ -36,14 +36,14 @@
             this.lb_thanhtien = new System.Windows.Forms.Label();
             this.lb_dongia = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtg_show = new System.Windows.Forms.DataGridView();
             this.cbb_sanpham = new System.Windows.Forms.ComboBox();
             this.cbb_soluong = new System.Windows.Forms.ComboBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_capnhap = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_show)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,15 +118,15 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Đơn giá: ";
             // 
-            // dataGridView1
+            // dtg_show
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 277);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(712, 188);
-            this.dataGridView1.TabIndex = 8;
+            this.dtg_show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_show.Location = new System.Drawing.Point(12, 277);
+            this.dtg_show.Name = "dtg_show";
+            this.dtg_show.RowHeadersWidth = 51;
+            this.dtg_show.RowTemplate.Height = 29;
+            this.dtg_show.Size = new System.Drawing.Size(712, 188);
+            this.dtg_show.TabIndex = 8;
             // 
             // cbb_sanpham
             // 
@@ -191,7 +191,7 @@
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.cbb_soluong);
             this.Controls.Add(this.cbb_sanpham);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtg_show);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lb_dongia);
             this.Controls.Add(this.lb_thanhtien);
@@ -202,7 +202,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_ChiTietDonHang";
             this.Text = "Frm_ChiTietDonHang";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_show)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +218,7 @@
         private System.Windows.Forms.Label lb_thanhtien;
         private System.Windows.Forms.Label lb_dongia;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtg_show;
         private System.Windows.Forms.ComboBox cbb_sanpham;
         private System.Windows.Forms.ComboBox cbb_soluong;
         private System.Windows.Forms.Button btn_them;

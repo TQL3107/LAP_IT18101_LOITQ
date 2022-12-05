@@ -20,7 +20,6 @@ namespace _2.BUS.Services
         private IDonHangChiTietRepository donHangChiTietRepository;
         private IDonHangRepository donHangRepository;
         private ISanPhamRepository sanPhamRepository;
-        private IDanhMucRepository danhMucRepository;
         private ICungCapRepository cungCapRepository;
         
         //private DonhangChitiet dhct;
@@ -31,7 +30,6 @@ namespace _2.BUS.Services
             donHangChiTietRepository = new DonHangChiTietRepository();
             donHangRepository = new DonHangRepository();
             sanPhamRepository= new SanPhamRepository();
-            danhMucRepository= new DanhMucRepository();
             cungCapRepository = new CungCapRepository();
         }
         
@@ -47,7 +45,16 @@ namespace _2.BUS.Services
 
         public List<DonHangChiTietView> GetViews()
         {
-              
+            lstdh = (from dhct in GetAll()
+                     join dh in donHangRepository.GetAll() on dhct.DonhangId equals dh.DonhangId
+                     join sp in sanPhamRepository.GetAll() on dhct.SanphamId equals sp.SanphamId
+                     select new DonHangChiTietView
+                     {
+                         donhangChitiet = dhct,
+                         donhang = dh,
+                         sanpham = sp,
+                     }).ToList();
+            return lstdh;
         }
         public string remove(DonhangChitiet donhangChitiet)
         {

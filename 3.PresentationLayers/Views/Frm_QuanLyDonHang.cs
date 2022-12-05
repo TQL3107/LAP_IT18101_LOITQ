@@ -107,7 +107,7 @@ namespace _3.PresentationLayers.Views
                     NhanvienId = cbb_nguoiban.Text != "" ? nhanVienService.GetNhanviens().FirstOrDefault(x => x.Ten == cbb_nguoiban.Text).NhanviennId : null,
                     KhachhangId = cbb_nguoimua.Text != "" ? KhachHangService.getAll().FirstOrDefault(x => x.HoTen == cbb_nguoimua.Text).KhachhangId : null,
                     ShipperId = cbb_nguoigiao.Text != "" ? shipperService.GetShippers().FirstOrDefault(x => x.Hoten == cbb_nguoigiao.Text).ShipperId : null,
-                    Ngaydathang = dtg_show.Dat
+                    //Ngaydathang = dtg_show.Text,
                 }));
                 loaddata();
             }
