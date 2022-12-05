@@ -60,11 +60,11 @@ namespace _2.BUS.Services
                           join sp in shipperRepository.GetAll() on dh.ShipperId equals sp.ShipperId
                           select new DonHangView
                           {
-                              //Donhang = dh,
-                              //khachhang = kh,
-                              //shipper = sp,
-                              //nhanvien = nv,
-                              
+                              Donhang = dh,
+                              khachhang = kh,
+                              shipper = sp,
+                              nhanvien = nv,
+
                           }).ToList();
             return lstDonHang;
         }

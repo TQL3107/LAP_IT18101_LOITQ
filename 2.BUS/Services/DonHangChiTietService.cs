@@ -47,8 +47,7 @@ namespace _2.BUS.Services
 
         public List<DonHangChiTietView> GetViews()
         {
-            
-                     
+              
         }
         public string remove(DonhangChitiet donhangChitiet)
         {
